@@ -20,4 +20,9 @@ public class HealthJSON implements ESable{
     public String getRequest() {
         return "http://localhost:9200/_cluster/health";
     }
+
+    @Override
+    public void print() {
+        System.out.println("Status:"+status);
+    }
 }
